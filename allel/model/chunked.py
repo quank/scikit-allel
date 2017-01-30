@@ -98,7 +98,7 @@ class GenotypeChunkedArray(ChunkedArrayWrapper, DisplayAs2D):
         >>> g.copy()
         <GenotypeChunkedArray shape=(3, 2, 2) dtype=int8 chunks=(3, 2, 2)
            nbytes=12 cbytes=359 cratio=0.0
-           compression=blosc compression_opts={'shuffle': 1, 'cname': 'lz4', 'clevel': 5}
+           compression=blosc compression_opts={'cname': 'lz4', 'clevel': 5, 'shuffle': 1}
            values=zarr.core.Array>
         >>> g.copy(storage='bcolzmem')  # doctest: +ELLIPSIS
         <GenotypeChunkedArray shape=(3, 2, 2) dtype=int8 chunks=(4096, 2, 2)
